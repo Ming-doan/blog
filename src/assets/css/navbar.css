@@ -1,0 +1,139 @@
+.navbar {
+    height: 64px;
+    width: 100%;
+    padding: 0 40px;
+    background-color: var(--background);
+    box-shadow: 0 0 25px 0 var(--shadow);
+    box-sizing: border-box;
+
+    z-index: 2;
+    position: fixed;
+    inset: 0 0 auto 0;
+}
+
+.navbar-center {
+    padding: 0 20px 0 0;
+}
+
+.logo-container {
+    width: 140px;
+    border-right: 1px solid var(--text);
+}
+
+.create-btn {
+    width: 100px;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.create-btn > i {
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.search-box {
+    height: 45px;
+    padding: 0 10px;
+    border-radius: var(--radius);
+    border: 1px solid var(--grey);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.search-box:hover {
+    border: 1px solid var(--text);
+}
+
+.search-box > label {
+    font-size: 14px;
+    padding: 0 5px;
+    cursor: text;
+}
+
+.search-box > input {
+    border: none;
+    outline: none;
+    padding: 0 10px;
+}
+
+.navigate-box {
+    width: 170px;
+    position: relative;
+}
+
+.navigate-container {
+    position: absolute;
+    inset: 100% 0 auto 0;
+    padding: 10px 0;
+    background-color: var(--background);
+    border-radius: var(--radius);
+    box-shadow: 0 0 25px 0 var(--shadow);
+}
+
+.navigate-option {
+    padding: 10px 5px;
+}
+
+.navigate-option > i {
+    width: 20px;
+    padding: 0 5px;
+    text-align: center;
+}
+
+.navigate-option > span {
+    margin-left: 10px;
+}
+
+.navigate-option:hover {
+    cursor: pointer;
+    background-color: var(--light-grey);
+}
+
+.navigate-selection {
+    height: 45px;
+    width: 100%;
+    padding: 0 5px;
+    border-radius: var(--radius);
+    border: 1px solid var(--grey);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.navigate-selection:hover {
+    background-color: var(--shadow);
+    cursor: pointer;
+}
+
+.navigate-selection > span {
+    margin-left: 10px;
+}
+
+.navigate-selection > i {
+    width: 20px;
+    padding: 0 5px;
+    text-align: center;
+}
+
+.navigate-selection.active {
+    background-color: var(--shadow);
+}
+
+.option-item {
+    height: 40px;
+    width: 40px;
+    margin: 0 5px;
+}
+
+.user-container {
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 5px;
+}
+
+.user-container > img {
+    height: 100%;
+    width: 100%;
+}

@@ -1,23 +1,42 @@
-import logo from './logo.svg';
 import './App.css';
+import { useRef } from 'react';
+
+// Import Components
+import NavBar from './components/navbar';
 
 function App() {
+  const navCategory = useRef([
+    {
+        id: '_home',
+        name: 'Home',
+        icon: <i className="fas fa-home"></i>
+    },
+    {
+        id: '_trend',
+        name: 'Trending',
+        icon: <i className="fas fa-poll"></i>
+    },
+    {
+        id: '_follow',
+        name: 'Following',
+        icon: <i className="fas fa-bookmark"></i>
+    }
+  ])
+  const notification = useRef([
+    {
+      id: 1,
+      author: '',
+      thumbnail: '',
+      title: '',
+      date: '',
+      isRead: false
+    }
+  ])
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar navCategory={navCategory} notify={notification}/>
     </div>
   );
 }
